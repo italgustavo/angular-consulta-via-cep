@@ -1,0 +1,39 @@
+<main>
+  <form>
+    <div class="list row">
+      <div class="col-md-8">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" name="zipcode" placeholder="Digite o CEP" maxlength="9" #input>
+          <div class="input-group-append">
+            <button (click)="buscar(input.value)" class="btn btn-outline-secondary" type="button">Pesquisar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <article class="res" *ngIf="endereco && !errorService">
+    <div class="col-md-6" >
+      <h4>CEP: <strong>{{endereco.cep}}</strong></h4>
+      <ul class="list-group">
+            <div class="body">
+      <ul>
+        <li class="list-group-item"><strong>DDD:</strong> {{ endereco.ddd }}</li>
+        <li class="list-group-item"><strong>Estado:</strong> {{ endereco.uf }}</li>
+        <li class="list-group-item"><strong>Cidade:</strong> {{ endereco.localidade }}</li>
+        <li class="list-group-item"><strong>Bairro:</strong> {{ endereco.bairro }}</li>
+        <li class="list-group-item"><strong>Endereço:</strong> {{ endereco.logradouro }}</li>
+      </ul>
+    </div>
+      </ul>
+    </div>
+  </article>
+  <article class="res erro" *ngIf="errorService">
+    <div class="header">
+      <p>CEP: <strong>{{ input.value }}</strong></p>
+    </div>
+    <div class="body">
+      <h4>Informe um CEP valido!</h4>
+    </div>
+  </article>
+</main>
