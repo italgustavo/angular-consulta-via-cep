@@ -1,23 +1,19 @@
 Este é um aplicativo simples em Angular que se conecta à API viacep.com.br, permitindo que os usuários pesquisem rapidamente endereços brasileiros e obtenham informações detalhadas sobre eles. O aplicativo fornece uma interface de usuário intuitiva com uma barra de pesquisa na qual os usuários podem inserir um CEP e obter resultados instantâneos.
 
-O aplicativo usa o módulo HttpClient do Angular para fazer solicitações HTTP à API viacep.com.br e os dados de resposta são exibidos em um formato de tabela. Os usuários podem visualizar detalhes como o nome da rua, bairro, cidade e estado de um determinado endereço.
-
 ## Nova Consulta
 
-
+![cep1](https://user-images.githubusercontent.com/55145973/236271388-ec9f833e-b232-4a31-889e-a2bd0fb1bdf2.png)
 
 Para criar uma nova consulta, digite o cep desejado e clique no botão "Pesquisar".
 
 
 ## Resultado da Consulta
 
-
-Visualizar Pedido
-
+![cep2](https://user-images.githubusercontent.com/55145973/236271393-9f407434-abdf-4681-89ee-a1c57847d1c1.png)
 
 Aguarde alguns momentos e a sua buscar será realizada!
 
-
+O aplicativo usa o módulo HttpClient do Angular para fazer solicitações HTTP à API viacep.com.br e os dados de resposta são exibidos em um formato de tabela. Os usuários podem visualizar detalhes como o nome da rua, bairro, cidade e estado de um determinado endereço.
 
 # AngularConsultaCep
 
